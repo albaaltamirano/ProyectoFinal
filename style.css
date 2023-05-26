@@ -443,7 +443,7 @@ footer {
     height: auto;
     background-image: linear-gradient(to right,
             rgba(21, 19, 18, 0.5),
-            rgba(8, 7, 7, 0.5)), url(./assets/Logo/perrosc.jpeg);
+            rgba(8, 7, 7, 0.5)), url(./assets/Logo/dog.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
