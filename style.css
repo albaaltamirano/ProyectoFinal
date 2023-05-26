@@ -1,34 +1,36 @@
-:root{
-    --global-palette1:#0a192f;
+:root {
+    --global-palette1: #0a192f;
     --global-palette2: #f35f1c;
     --global-palette3: #fffffe;
     --global-palette4: #444444;
     --global-palette5: #bab6b6;
-    --global-palette6:#ffffff;
-    --global-palette7:#fff;
+    --global-palette6: #ffffff;
+    --global-palette7: #fff;
 }
 
 * {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 header {
-    background-color: #fffffe;
+    background-color: var(--global-palette3);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
-    margin-top: 4%;
+    gap: 30px;
+    
 
 
 }
 
 .logo {
-    max-width: 70%;
-    max-height: 70%;
-    height: 15%;
-    width: 15%;
+    max-width: 100%;
+    height: 14%;
+    width: 14%;
     margin-bottom: 80px;
     margin-top: 4%;
 }
@@ -42,23 +44,24 @@ ul {
 
 /* formato de lista */
 .navbar-list li a {
-    background-color: #0a192f;
-    color: #fffffe;
+    font-family:'Libre Baskerville', serif;
+    color:var(--global-palette1);
     text-decoration: none;
-    padding: 20px 35px;
+    padding: 10px 25px;
     display: block;
     text-align: left;
     position: relative;
     top: 0px;
     left: 0px;
     font-size: 16px;
-
+    font-weight: 900;
+    
 
 }
 
 /* resalta al pasar el mouse en la lista */
 .navbar-list li a:hover {
-    background-color:#f35f1c;
+    background-color: var(--global-palette2);
 
 }
 
@@ -91,12 +94,25 @@ ul {
 
 }
 
+/* menu hamburguesa*/
+
+.menu-label {
+    width: 100%;
+    padding: 10px 20px;
+    background:var(--global-palette1);
+    text-align: right;
+    box-sizing: border-box;
+    color:var(--global-palette7);
+    font-size: 30px;
+    display: none;
+}
+
 /* iconos de redes */
 .redes {
-    color:#0a192f;
+    color: var(--global-palette2);
     padding: 8px;
-    margin-bottom: 50px;
-    margin-top: 4%;
+    
+    
 
 }
 
@@ -106,28 +122,29 @@ ul {
     border-radius: 0;
     box-shadow: 5px 5px hsl(0, 0%, 76%);
     position: relative;
-    margin-top: 6%;
-    margin-bottom: 50px;
+    margin-top: 2%;
+    margin-bottom: 30px;
 }
 
 .slider ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
-.slider ul li  {
+.slider ul li {
     position: relative;
     display: none;
-    height:750px;
+    height: 750px;
 }
 
 .slider ul li img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+
 }
+
 .slider ul li span {
     position: absolute;
     bottom: 0;
@@ -136,17 +153,19 @@ ul {
     width: 100%;
     padding: 50px;
     text-align: center;
-    color:#f35f1c;
+    color: var(--global-palette2);
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
-    
+
 }
+
 /* buttons */
-.slider .buttons  {
+.slider .buttons {
     position: absolute;
     top: 40%;
-    width:  100%;
+    width: 100%;
 }
+
 .slider .buttons .next {
     font-size: 2rem;
     right: 0;
@@ -154,7 +173,8 @@ ul {
     cursor: pointer;
     width: 50px;
     text-align: center;
-}    
+}
+
 .slider .buttons .prev {
     font-size: 2rem;
     left: 0;
@@ -162,11 +182,13 @@ ul {
     cursor: pointer;
     width: 50px;
     text-align: center;
-}   
+}
+
 .slider .buttons .next:hover {
     background: hsl(31, 91%, 43%);
     color: hsl(0, 0%, 93%);
 }
+
 .slider .buttons .prev:hover {
     background: hsl(31, 91%, 43%);
     color: hsl(0, 0%, 93%);
@@ -177,14 +199,19 @@ ul {
     animation-name: fade;
     animation-duration: 2.5s;
 }
-  
+
 @keyframes fade {
-    from {opacity: .2} 
-    to {opacity: 1}
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
-  
+
 /* intro */
-.introduccion{
+.introduccion {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -192,24 +219,26 @@ ul {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .intro {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
     width: 40%;
     height: 50%;
 }
-.quienes-somos{
+
+.quienes-somos {
     display: flex;
     flex-direction: row;
-   
+
 }
 
 .quienes-somos h1 {
     font-family: 'Libre Baskerville', serif;
-    color: #444444;
+    color: var(--global-palette4);
     font-size: 50px;
     text-align: left;
     display: flex;
@@ -221,8 +250,9 @@ ul {
 
 
 }
-.introduccion img{
-    display: flex ;
+
+.introduccion img {
+    display: flex;
     justify-content: end;
     align-items: center;
     width: 30%;
@@ -230,7 +260,21 @@ ul {
     margin-top: 4%;
     border-radius: 5px;
     flex-wrap: wrap;
-     
+
+}
+
+.introduccion img:hover {
+    background-color: var(--global-palette7);
+    z-index: 10;
+
+    /* box-shadow: 0 0 15px #f35f1c;
+    -moz-box-shadow: 0 0 15px #f35f1c;
+    -webkit-box-shadow: 0 0 15px #f35f1c; */
+
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+   
 }
 
 .intro p {
@@ -243,7 +287,7 @@ ul {
     width: 65%;
     height: 50%;
     font-size: 14px;
-    text-align: left;
+    text-align:justify;
     line-height: 35px;
 
 }
@@ -251,7 +295,7 @@ ul {
 .intro h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    color: #f35f1c;
+    color: var(--global-palette2);
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -282,33 +326,70 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-   
+
 }
 
 .cajas-ficha {
-    width: 500px;
-    height: 500px;
-    padding: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 20px 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    border: 0.1em solid #bab6b6;
 
 
+
+
+}
+
+.cajas-txt {
+    border-bottom: 5px solid var(--global-palette2);
 
 }
 
 .cajas-ficha a {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    color: #f35f1c;
+    display: inline-block;
+    position: relative;
+}
+
+.cajas-ficha span {
+    opacity: 0;
+}
+
+.cajas-ficha a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--global-palette3);
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-align:left;
 
 
 }
- 
+
+.cajas-ficha a:hover {
+
+    background-color: var(--global-palette2);
+
+}
+
+.cajas-ficha a:hover span {
+    display: block;
+    opacity: 1;
+    transform: scale (10);
+}
+
+.cajas-ficha a:hover img {
+    opacity: 0.1;
+
+}
+
+
+
 
 /* h2 text */
 .cajas-txt h2 {
@@ -318,21 +399,9 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
-    color: #444444;
+    color: var(--global-palette2);
     font-family: 'Libre Baskerville', serif;
-
-}
-
-/* h3 text */
-.cajas-txt h3 {
-    font-weight: 600;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-    color: #444444;
-    font-family: 'Red Hat Mono', monoespaciado;
+    background: none;
 
 
 }
@@ -366,17 +435,19 @@ footer {
 .formas-contacto {
 
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 20px;
     justify-content: space-around;
     height: auto;
-    background-image: url(./assets/Logo/perrosc.jpeg);
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)), url(./assets/Logo/perrosc.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.8;
+
     margin-top: 50px;
 
 }
@@ -384,7 +455,7 @@ footer {
 .formas-contacto h4 {
     display: flex;
     flex-direction: row;
-    color: #fffffe;
+    color: var(--global-palette3);
     font-size: 15px;
 }
 
@@ -393,7 +464,7 @@ footer {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     text-align: center;
-    color: #fffffe;
+    color: var(--global-palette3);
 
 
 }
@@ -429,15 +500,15 @@ footer {
 .contacto-mensaje {
     background: rgba(255, 255, 255, 0.85);
     border: none;
-    color: #fffffe;
+    color: var(--global-palette3);
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    font-weight:25%;
+    font-weight: 25%;
     line-height: 35px;
     padding: 18px 20px;
-    height:165px;
-    
-    
+    height: 165px;
+
+
 
 }
 
@@ -445,38 +516,40 @@ footer {
     width: 300px;
     height: 200px;
     display: flex;
-    flex-direction:;
+    flex-direction: ;
     flex-wrap: wrap;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
     font-family: 'Libre Baskerville', serif;
-    color: #fffffe;
+    color: var(--global-palette3);
     margin: 20px;
-    
+
 }
+
 .contacto-txt {
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
-    color: #fffffe;
-    border: 2px solid #fff;
+    color: var(--global-palette3);
+    border: 2px solid var(--global-palette7);
     padding: 30px 30px;
-    
-    
+
+
 
 }
-.contacto-enviar{
+
+.contacto-enviar {
     float: right;
     margin: 0;
-    color: #ffffff;
-    font-family:'Libre Baskerville', serif ;
+    color: var(--global-palette6);
+    font-family: 'Libre Baskerville', serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.45px;
     padding: 13px 25px;
     background: none;
-    border: 2px solid #fff;
-    
-    
+    border: 2px solid var(--global-palette7);
+
+
 }
 
 
@@ -488,7 +561,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    
+
 
 
 
@@ -505,9 +578,10 @@ footer {
     border-radius: 5px;
 
 }
+
 /* pie final */
 .copyright-redes {
-    background-color: #0a192f;
+    background-color: var(--global-palette1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -519,7 +593,7 @@ footer h4 {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    background-color: #0a192f;
+    background-color: var(--global-palette1);
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
     text-align: center;
@@ -534,78 +608,112 @@ footer h4 {
     justify-content: center;
     align-items: center;
 }
-.footer-redes{
-    color:#444444;
+
+.footer-redes {
+    color:var(--global-palette4);
     padding: 7px;
-    
+
 }
 
 .footer-logo p {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
-    color: #f35f1c;
+    color: var(--global-palette2);
     margin-top: 30px;
     margin: 30px;
 }
+
 /* hr hr hr */
 hr {
     border: 1px;
     clear: both;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 10% 20% 10% 20%;
-    background-color: #f35f1c;
+    background-color: var(--global-palette2);
     height: 2px;
-    
+
 }
 
 
 
-/* pagina contacto */
-
-.refugio {
+/* pagina refugio */
+.bloque-refugio {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: left;
+    -webkit-box-align: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    gap:50;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/gatitos.webp);
+    background-position: 15%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-refugio .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.container-refugio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+
 
 }
-.refugio h1{
+
+.container-refugio h2 {
+    width: 75%;
     font-family: 'Libre Baskerville', serif;
-    color: #444444;
+    color: var(--global-palette2);
     font-size: 40px;
     text-align: left;
-    display: flex;
-    margin-top: 5px;
-    font-weight:900;
-    margin-left: 4%;
-    text-align: left;
-    align-items: center;
+    font-weight: 900;
 
 }
 
-.refugio-txt {
-    width: 70%;
-    height: 50%;
+.container-refugio .inf p {
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-    padding: 60px;
-    color:#444444 ;
+    text-align: justify;
+    color: var(--global-palette4);
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
     margin-top: 40px;
     line-height: 35px;
 
 }
-.refugio-imagen{
+
+.container-refugio .inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+
+
+}
+
+.container-refugio .imagen {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -614,9 +722,9 @@ hr {
 
 }
 
-.refugio img {
-    height: 45%;
-    width: 35%;
+.container-refugio img {
+    height: 30%;
+    width: 30%;
     border-radius: 5px;
 
 }
@@ -628,196 +736,747 @@ hr {
     height: 5%;
     bottom: 13%;
     right: 50px;
-    color: #f35f1c;
+    color:var(--global-palette2);
 }
 
 /* html ubicacion */
-.ubicacion{
+.bloque-ubicacion {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/dog.jpg);
+    background-position: 15%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-ubicacion .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+.container-ubicacion {
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
-.ubicacion-mapa {
-    width: 100%;
-    height: 50%;
-    background-color: #0a192f;
-
-}
-.ubicacion h1{
+.container-ubicacion h3 {
+    width: 50%;
     font-family: 'Libre Baskerville', serif;
-    color: #444444;
+    color: var(--global-palette2);
     font-size: 40px;
-    text-align: left;
-    display: flex;
-    margin-top: 5px;
-    font-weight:900;
-    margin-left: 4%;
-    text-align: left;
-    align-items: center;
+    text-align: justify;
+    font-weight: 900;
 
 }
-.ubicacion p{
-    width: 70%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+.container-ubicacion .map{
+    width: 50%;
+    height:auto;
+}
+
+.container-ubicacion p {
+    width: 50%;
     text-align: center;
-    padding: 60px;
-    color:#444444 ;
+    color: var(--global-palette4);
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    margin-top: 40px;
 }
+
 /* html como ayudar */
-.section-ayuda{
+.bloque-ayuda {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/ayuda1.webp);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-ayuda {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
     padding: 25px;
 }
-.section-ayuda h1{
+
+.bloque-ayuda .title {
     font-family: 'Libre Baskerville', serif;
-    color: #444444;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+
+}
+
+.container-ayuda h2 {
+    width: 50%;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette1);
     font-size: 40px;
     text-align: left;
-    display: flex;
-    font-weight:900;
-    text-align: left;
-    align-items: center;
+    font-weight: 900;
 }
-.section-ayuda p{
-    width: 70%;
-    height: 20%;
+
+.container-ayuda p {
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     padding: 10px;
-    color:#444444 ;
+    color: var(--global-palette4);
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
+    line-height: 35px;
 }
 
-.section-ayuda-info{
+.container-ayuda .inf {
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    padding: 10px;
-    
-}
-.ayuda-caja-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 30%;
-    border: 0.1px solid #c3baba;
-    padding: 1%;
-   
-    
-}
-.section-ayuda-info p{
-
-    color:#444444 ;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
-   
-   
-}
-.section-ayuda-info h4{
-    
-    font-family: 'Libre Baskerville', serif;
-    color: #f35f1c;
-    font-size: 40px;
-    text-align: center;
-    display: flex;
-    font-weight:900;
-
-}
-.apadrinar{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    gap: 30px;
     padding: 25px;
+
+
 }
-.apadrinar h2{
+
+.container-ayuda h3 {
     font-family: 'Libre Baskerville', serif;
-    color: #f35f1c;
+    color: var(--global-palette2);
     font-size: 30px;
     text-align: left;
-    display: flex;
-    font-weight:900;
-    text-align: left;
-    align-items: center;
+    font-weight: 900;
 }
-.apadrinar p{
-    width: 70%;
-    height: 20%;
+
+.ayudando {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 5%;
+    padding: 25px;
+}
+
+.inf .caja-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 35%;
+    border: 0.1px solid #c3baba;
     padding: 10px;
-    color:#444444 ;
+
+}
+
+.inf p {
+
+    line-height: 15px;
+    text-align: center;
+    padding: 0%;
+    font-size: 12px;
+
+
+}
+
+.container-ayuda img {
+    width: 5%;
+
+}
+
+.inf h4 {
+
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette2);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.apadrinar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 25px;
+}
+
+
+.lugar-temporal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 25px;
+}
+
+.voluntario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 25px;
+}
+
+.ayuda-dinero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 25px;
+}
+
+.ayuda-dinero .list {
+    display: list-item;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5%;
+
+}
+
+.ayuda-dinero>ul {
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    margin-top: 10px;
-    line-height: 35px;
+    color:var(--global-palette4);
+    width: 20%;
+    height: 20%;
+    text-align: justify;
+    margin-left: 25%;
+}
+
+.ayuda-donando {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 25px;
+    width: 100%;
+}
+.ayuda-latas {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 5px;
+    width: 50%;
+   
+}
+.ayuda-latas-i{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.ayuda-latas-i img{
+    width: 48%;
+    
 }
 
 /* contacto html */
-.title-contact{
+.bloque-contacto {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Libre Baskerville', serif;
-    color: #444444;
-    font-size: 40px;
-    text-align: left;
-    display: flex;
-    font-weight:900;
-    text-align: left;
+    justify-content: left;
+    -webkit-box-align: center;
     align-items: center;
-    margin-bottom: 25px;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/cats1.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-contacto .title {
+    font-family: 'Libre Baskerville', serif;
+    color: #fffffe;
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.container-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
 
 }
-.section-contact{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    padding: 25px;
+
+.container-contacto .contacto {
+    width: 50%;
+    margin: 0px;
+
 }
-.section-contact img{
-    width: 30%;
-    width: 30%;
+
+.container-contacto h3 {
+    width: 50%;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette2);
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
 }
-.section-contact-txt{
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    color:#444444 ;
+
+.contacto .txt {
+    width: 70%;
+    color: var(--global-palette4);
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    margin-top: 10px;
     line-height: 35px;
+    margin: 2%;
 }
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contacto-icon {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-icon img {
+    width: 5%;
+
+}
+
+/* castraciones html */
+.bloque-castraciones {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/cats-dog.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-castraciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.bloque-castraciones .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+}
+
+.container-castraciones h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette2);
+    font-size: 30px;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 20px 20px;
+
+
+}
+
+.container-castraciones h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette4);
+    font-size: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-weight: 900;
+    align-items: center;
+    
+}
+
+.container-castraciones .inf{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+    color: var(--global-palette4);
+    width: 50%;
+    font-size: 14px;
+    line-height: 35px;
+    gap: 20px;
+
+}
+
+.container-castraciones .list {
+    display: list-item;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+
+.container-castraciones>ul {
+
+    width: 20%;
+    height: 20%;
+    text-align: justify;
+
+
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto 5rem;
+    text-align: center;
+
+}
+
+th,
+td {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
+tr {
+    background: hsla(51, 33%, 88%, 0.7);
+}
+
+tr,
+td {
+    transition: .3s ease-in;
+}
+
+tr:first-child {
+    background: var(--global-palette2);
+    font-family: 'Libre Baskerville', serif;
+}
+
+tr:nth-child(even) {
+    background: hsla(51, 33%, 88%, 0.7);
+}
+
+td:empty {
+    background: hsla(51, 33%, 88%, 0.7);
+}
+
+tr:hover:not(#firstrow),
+tr:hover td:empty {
+    background: var(--global-palette4);
+    pointer-events: visible;
+}
+
+tr:hover:not(#firstrow) {
+    transform: scale(1.1);
+    font-weight: 700;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+}
+.container-castraciones img{
+    width: 40%;
+    border-radius: 5px;
+    
+}
+.container-castraciones p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+    color: var(--global-palette4);
+    width: 50%;
+    font-size: 14px;
+    line-height: 35px;
+    gap: 20px;
+}
+
+.bloque-rescates {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/dog1.jpg);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-rescates .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+
+
+/* requisitos html */
+.bloque-requisitos {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/dog1.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-requisitos .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.container-requisitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.container-requisitos h2 {
+    width: 50%;
+    font-family: 'Libre Baskerville', serif;
+    color:var(--global-palette2);
+    font-size: 30px;
+    text-align: left;
+    font-weight: 900;
+
+
+
+}
+
+.container-requisitos h3 {
+    width: 50%;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette4);
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    font-weight: 900;
+    text-align: left;
+    align-items: center;
+}
+
+.container-requisitos .inf {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+    color: var(--global-palette4);
+    font-size: 14px;
+    line-height: 35px;
+    gap: 20px;
+
+}
+
+
+.container-requisitos .list {
+    display: list-item;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+
+.container-requisitos>ul {
+
+    width: 20%;
+    height: 20%;
+    text-align: justify;
+
+
+
+}
+/* adopcion html */
+.bloque-adopcion {
+    width: 100%;
+    padding: 11rem 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(21, 19, 18, 0.5),
+            rgba(8, 7, 7, 0.5)),
+        url(./Assets/Logo/adopcion.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloque-adopcion .title {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--global-palette3);
+    font-size: 25%;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 2%;
+}
+.card{
+       
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+        gap: 30px;
+       
+    
+    }
+    
+    
+    .card-ficha {
+        width: 70%;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid var(--global-palette2);
+        border-radius: 10px;
+        padding: 20px;
+    
+    }
+    
+    .card-ficha img {
+        width: 30%;
+        height: auto;
+    
+    }
+    
+    .card-text{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .card-txt h3{
+        font-family: 'Libre Baskerville', serif;
+        color: var(--global-palette2);
+        font-size: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        font-weight: 900;
+        align-items: center;
+    }
+   .card-text p{
+    color: var(--global-palette4);
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'Libre Baskerville', serif;;
+    text-align: justify;
+   }
+   .card-inf{
+    width: 20%;
+   }

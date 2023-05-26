@@ -48,24 +48,6 @@ window.addEventListener('load', () => {
         }
     }
 
-})
-
-
-
-$(document).ready(function(){
-	$(".contenedorImg").hover(
-  	function(){
-    
-    	$(".contenedorDescripcion").addClass("visible muestraDescripcion");
-    },
-    function(){
-    
-    $(".contenedorDescripcion").removeClass("muestraDescripcion");
-    setTimeout(
-    	function(){ 
-      	$(".contenedorDescripcion").removeClass("visible muestraDescripcion"); 
-        $(".contenedorDescripcion").addClass("hidden");
-        }, 300);
-    }
-  	);
 });
+
+// slider castraciones
