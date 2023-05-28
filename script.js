@@ -50,4 +50,13 @@ window.addEventListener('load', () => {
 
 });
 
-// slider castraciones
+//modal
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+// boton-adopción
+function redirect()
+{
+window.location.href="https://api.whatsapp.com/send?phone=543493461833";
+}
