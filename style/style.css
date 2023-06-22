@@ -106,7 +106,7 @@ ul {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    text-align: left;
+    text-align: center;
     position: relative;
     top: 0px;
     left: 0px;
@@ -150,12 +150,11 @@ ul {
 /* menu hamburguesa*/
 
 .toggle{
-    width:10%;
+    width:20%;
     padding: 10px 10px;
-    text-align: center;
+    text-align: right;
     box-sizing: border-box;
-    background: var(--global-palette1);
-    color: var(--global-palette6);
+    color: var(--global-palette2);
     font-size: 30px;
     display: none;
     border-radius: 5px;
@@ -585,7 +584,7 @@ footer {
     height: auto;
     background-image: linear-gradient(to right,
             rgba(21, 19, 18, 0.5),
-            rgba(8, 7, 7, 0.5)), url(../assets/Logo/perrosc.jpeg);
+            rgba(8, 7, 7, 0.5)), url(.././Assets/Logo/perrosc.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -767,6 +766,14 @@ footer h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+.footer-logo-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-redes {
@@ -774,7 +781,6 @@ footer h4 {
     padding: 7px;
 
 }
-
 .footer-logo p {
     font-family: 'Londrina Solid', cursive;
     font-size: 20px;
