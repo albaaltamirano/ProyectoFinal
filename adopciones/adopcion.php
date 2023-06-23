@@ -1,6 +1,6 @@
 
 <?php include("../conexion.php");
-$adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
+$adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva where id=1";
 
 ?>
 <!DOCTYPE html>
