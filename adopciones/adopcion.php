@@ -160,7 +160,7 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva where id=1";
                 onclick="onClick(this)" class="w3-hover-opacity">
             <!--modal
            -->
-            <div class="card-txt">
+            <div class="card-txt" id="div-a-unir">
                 <h3>Dani Malón</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
                     consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur

@@ -67,28 +67,11 @@ document.getElementById("LinkId").addEventListener("click", function () {
 });
 
 // button card principal
-function irAlSegundoDiv() {
-    // Obtener el documento del segundo HTML
-    var iframe = document.createElement('iframe');
-    iframe.src = 'adopcion.html';
-    iframe.style.display = 'none';
-
-    // Añadir el iframe al cuerpo del documento actual
-    document.body.appendChild(iframe);
-
-    // Obtener el segundo div dentro del iframe
-    iframe.onload = function() {
-      var segundoDiv = iframe.contentDocument.getElementById('div-a-unir');
-      
-      // Desplazarse al segundo div
-      segundoDiv.scrollIntoView({ behavior: 'smooth' });
-
-      // Eliminar el iframe
-      setTimeout(function() {
-        document.body.removeChild(iframe);
-      }, 1000); // Puedes ajustar este tiempo según tus necesidades
-    };
-  }
+function ir()
+    {
+   
+    window.location.href="http://proyectofinal1/adopciones/adopcion.php";
+    }
 
 // slider rescates
 
