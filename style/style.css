@@ -592,14 +592,10 @@ footer {
     justify-content: center;
     justify-items: center;
     width: 100%;
-    background-image: url(../Assets/Logo/wave.svg); 
-    background-repeat: no-repeat;
-    background-size: contain;
+   
 
 }
-footer .sgv{
-    width: 100%;
-}
+
 
 .footer-contacto {
     display: flex;
@@ -769,10 +765,17 @@ footer .sgv{
 }
 
 /* footer final */
-
+.elementor{
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction:ltr;
+}
 .footer-final {
    width: 100%;
-  
+  background-color: var(--global-palette1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -785,12 +788,13 @@ footer p {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    /* background-color: var(--global-palette1); */
+    background-color: var(--global-palette1);
     font-family: 'Libre Baskerville', serif;
     font-size: 12px;
     text-align: center;
-    padding: 30px;
+    padding: 5px;
     color: var(--global-palette3);
+   
 
 }
 
@@ -858,6 +862,7 @@ hr {
     background-size: cover;
     margin-top: 5%;
     margin-bottom: 5%;
+
 
 }
 
@@ -947,6 +952,7 @@ hr {
     bottom: 13%;
     right: 50px;
     color: var(--global-palette2);
+    z-index: 1;
 }
 
 /* html ubicacion */
@@ -2042,6 +2048,7 @@ tr:hover:not(#firstrow) {
     margin-left: 5%;
 }
 
+  
 .main-contacto-vet {
     display: flex;
     width: 100%;
@@ -2060,7 +2067,7 @@ tr:hover:not(#firstrow) {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #f5f5f5;
+    border: 2px solid var(--global-palette2);
 
 
 }
@@ -2085,7 +2092,7 @@ tr:hover:not(#firstrow) {
 .container-contacto-vet h3 {
     width: 80%;
     font-family: 'Londrina Solid', cursive;
-    color: var(--global-palette2);
+    color: var(--global-palette4);
     font-size: 30px;
     font-weight: 900;
     text-align: center;
