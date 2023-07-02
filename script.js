@@ -1,3 +1,6 @@
+
+// slider principal
+
 window.addEventListener('load', () => {
 
 
@@ -60,10 +63,7 @@ function redirect() {
   window.location.href = "https://api.whatsapp.com/send?phone=543493461833";
 }
 // form
-var myform = document.getElementById("FormId");
-document.getElementById("LinkId").addEventListener("click", function () {
-  myform.submit();
-});
+
 
 
 // toggle
@@ -79,12 +79,7 @@ function mobile() {
   
 }
 
-
-//overlay
-// $(".toggle").on('click',function(){
-//   $(this).children(".overlay").toggleClass("show");
-// });
-
+// tabla castraciones
 Array.from(document.getElementsByClassName("hover")).forEach(e => e.addEventListener("mouseleave", 
   function () {
     e.removeClass("hover");
@@ -93,7 +88,7 @@ Array.from(document.getElementsByClassName("hover")).forEach(e => e.addEventList
 
 // tabla castraciones
 var table = document.getElementById("racetimes");
-  var rows = table.getElementsByTagName("tr");
+  var rows = table.getElementsByTagName("th");
 
   // Ocultar filas en pantallas pequeñas
   if (window.innerWidth < 600) {
@@ -114,3 +109,24 @@ rows[i].style.display = "table-row";
 }
 }
 });
+
+
+// 
+
+document.addEventListener("DOMContentLoaded", function() {
+  var modal = document.getElementById("myModal");
+  var modalImage = document.getElementById("modalImage");
+  var closeButton = document.getElementsByClassName("close")[0];
+
+  // Abrir modal automáticamente después de 2 segundos
+  setTimeout(function() {
+    modal.style.display = "block";
+    modalImage.src = "./Assets/Carrusel/castracion.png";
+  }, 2000);
+
+  // Cerrar modal al hacer clic en la "X"
+  closeButton.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+});
+

@@ -1,6 +1,6 @@
 
 <?php include("../conexion.php");
-$adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
+$adopcion = "SELECT * FROM nueva WHERE id ";
 
 ?>
 <!DOCTYPE html>
@@ -102,8 +102,8 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
             <h1>¿Estás listo para adoptar?</h1>
         </div>
     </section>
-    <section class="section-adopcion intro">
-        <div class="section-adopcion intro text">
+    <section class="section-adopcion">
+        <div class="section-adopcion text">
             <p>Adoptar a un perro o gato implica tomar una gran decisión y responsabilidad. Debes tener en cuenta que el
                 perro requiere tiempo, por lo tanto es importante que tengas claridad sobre la disponibilidad que tengas
                 de este. Él no solo necesita compañía, sino actividad física diaria.
@@ -115,7 +115,7 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
                 adoptar un compañero.</p>
             <div>
 
-    </section>
+</section>
     <section class="container-adopcion">
         <div class="container-adopcion bloque">
             <div class="container-adopcion bloque text">
@@ -176,17 +176,26 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
             <div class="card-inf">
                <ul>
                <?php $resultado = mysqli_query ($conexion,$adopcion);
-               
-               while ($row=mysqli_fetch_assoc($resultado)){?>
-                    <li><img src="../Assets/Logo/raza.png"> <?php echo $row["Nombre"];?> </li>
-                    <li><img src="../Assets/Logo/sex.png"> <?php echo $row["Raza"];?> </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $row["Tamaño"];?> </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $row["Vacunas"];?></li>
-                    <?php }?>
+          if($resultado){
+            while($row = $resultado -> fetch_array()){
+              $id = $row['Id'];
+              $nombre = $row['Nombre'];
+              $raza = $row['Raza'];
+              $genero = $row['Genero'];
+              $tamaño = $row['Tamaño'];
+              $vacunas = $row['Vacunas'];
+            }
+          }?>
+         
+                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
+                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
+                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas?></li>
+                    
                 </ul>
             </div>
         </article>
-        <article class="card-ficha" id="roberto">
+         <article class="card-ficha" id="roberto">
             <img src="../Assets/Adopciones/Roberto.jpg" alt="Anita" title="Roberto" style="cursor:pointer"
                 onclick="onClick(this)" class="w3-hover-opacity">
             <div class="card-txt">
@@ -203,10 +212,12 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
             </div>
             <div class="card-inf">
                 <ul>
-                    <li><img src="../Assets/Logo/raza.png"> Galgo </li>
-                    <li><img src="../Assets/Logo/sex.png"> Hembra </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> Grandeerrrrrrr </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                
+                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
+                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
+                    <li><img src="../Assets/Logo/tamaño.png"><?php echo $tamaño;?></li>
+                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas;?></li>
+                    
                 </ul>
             </div>
         </article>
@@ -227,10 +238,10 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
             </div>
             <div class="card-inf">
                 <ul>
-                    <li><img src="../Assets/Logo/raza.png"> Mestizo </li>
-                    <li><img src="../Assets/Logo/sex.png"> Macho </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> Mediano </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
+                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
+                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
+                    <li><img src="../Assets/Logo/vacunas.png"><?php echo $vacunas;?> </li>
                 </ul>
             </div>
         </article>
@@ -251,10 +262,10 @@ $adopcion = "SELECT Nombre, Raza, Tamaño, Vacunas FROM nueva";
             </div>
             <div class="card-inf">
                 <ul>
-                    <li><img src="../Assets/Logo/raza.png"> Mestizo </li>
-                    <li><img src="../Assets/Logo/sex.png"> Macho </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> Mediano </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
+                    <li><img src="../Assets/Logo/sex.png"><?php echo $genero;?> </li>
+                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas;?></li>
                 </ul>
             </div>
 

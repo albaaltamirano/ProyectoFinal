@@ -378,7 +378,7 @@
 
     }
 
-    .main-contacto {
+    .contacto-vet {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -388,20 +388,47 @@
         gap: 25px;
     }
 
-    .container-contacto {
-        width: 100%;
+    .a-box {
+        width: 70%;
+        gap: 30px;
+    }
+
+
+    .imagen-container {
+        height: 240px;
+        width: 40%;
+        overflow: none;
+        
+    }
+
+    .inner-skew {
+        overflow: none;
+        width: 70%;
 
     }
 
-    .container-contacto h2 {
-        width: 100%;
+ 
+
+    .text-container h3 {
+        
+        font-size: 16px;
+    }
+
+
+    .contacto-vet h2 {
+        width: 50%;
         font-size: 30px;
         text-align: center;
     }
 
-    .contacto-icon {
-        width: 80%;
 
+
+    .contacto .txt {
+        width: 80%;
+    }
+
+    .contacto-icon {
+        width: 100%;
     }
 
     .bloque-contacto-vet {
@@ -410,22 +437,7 @@
 
     }
 
-    .container-contacto-vet {
-        width: 80%;
-
-    }
-
-    .main-contacto-vet h2 {
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .container-contacto-vet h3 {
-        width: 100%;
-        font-size: 25px;
-
-    }
+   
 
     .bloque-castraciones {
         width: 100%;
@@ -467,19 +479,216 @@
         border-radius: 5px;
 
     }
+
     #racetimes {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
-    
+
+
     }
+
     #racetimes th,
     td {
         padding: 1.2rem;
         font-size: 1rem;
         width: 100%;
     }
+    .bloque-adopcion {
+       
+        padding: 7rem 1rem;
+      
+    }
+    
+    .bloque-adopcion .title {
+        margin-left: 0;
+    }
+    
+    .bloque-adopcion .title h1 {
+        font-size: 40px;
+        margin-left: 0;
+    }
+   
+    .section-adopcion  {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
+    }
+    .section-adopcion  .text{
+        width: 80%;
+
+    }
+    
+    .section-adopcion p {
+        width: 100%;
+        
+    }
+    
+    .container-adopcion {
+    width: 100%;
+    }
+    
+    .container-adopcion .bloque {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    
+    }
+    
+    .container-adopcion .bloque .text {
+        width: 40%;
+        
+    }
+    
+    .container-adopcion .bloque h3 {
+        width: 100%;
+        font-family: 'Londrina Solid', cursive;
+        color: var(--global-palette4);
+        font-size: 50px;
+        text-align: left;
+        margin-top: 5px;
+        font-weight: 900;
+    }
+    
+    .container-adopcion .bloque p {
+        width: 80%;
+        
+    
+    }
+    
+    .container-adopcion .bloque .imagen {
+        width: 30%;
+    
+    }
+    
+    .container-adopcion .bloque img {
+        width: 150%;
+        height: 300px;
+    }
+    
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        gap: 30px;
+        margin-top: 5%;
+    
+    }
+    
+    .card h2 {
+        width: 60%;
+        font-family: 'Londrina Solid', cursive;
+        color: var(--global-palette4);
+        font-size: 50px;
+        text-align: center;
+        margin-top: 5px;
+        font-weight: 900;
+    }
+    
+    .card h4 {
+        font-family: 'Libre Baskerville', serif;
+        color: var(--global-palette2);
+        font-size: 15px;
+        width: 60%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .card-ficha {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid var(--global-palette2);
+        border-radius: 10px;
+    
+    
+    }
+    
+    .card-ficha img {
+        width: 30%;
+        border-radius: 20px;
+        padding: 10px;
+    
+    }
+    
+    .card-txt {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    
+    
+    }
+    
+    .card-txt h3 {
+        font-family: 'Libre Baskerville', serif;
+        color: var(--global-palette2);
+        font-size: 20px;
+        width: 80%;
+        text-align: left;
+        font-weight: 900;
+    }
+    
+    .card-txt p {
+        width: 90%;
+        color: var(--global-palette4);
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 'Libre Baskerville', serif;
+        text-align: justify;
+    
+    }
+    
+    .card-inf {
+        width: 18%;
+        padding: 2%;
+        color: var(--global-palette4);
+        font-size: 14px;
+        line-height: 30px;
+        font-family: 'Libre Baskerville', serif;
+    
+    
+    }
+    
+    .card-inf img {
+        padding: 2%
+    }
+    
+    .button-adopta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    
+    }
+    
+    .button {
+        width: 35%;
+        background: #606de1;
+        border-radius: 5px;
+        color: var(--global-palette7);
+        padding: 5px;
+    
+    }
+    
 }
 
 @media screen and (min-width:100px) and (max-width:480px) {
@@ -628,7 +837,7 @@
         display: none;
     }
 
-  
+
 
     .container__principal .text {
         gap: 20px;
@@ -636,25 +845,28 @@
         text-align: center;
 
     }
+
     .container__principal .text p {
         width: 90%;
         line-height: 30px;
-    
+
     }
+
     .container__principal .text h2 {
         width: 90%;
         font-size: 12px;
-        
-    
+
+
     }
-    
+
     .container__principal .text h1 {
-        width:90%;
+        width: 90%;
         font-size: 35x;
         font-weight: 700;
-    
-    
+
+
     }
+
     .container__principal .imagen {
         display: flex;
         justify-content: center;
@@ -672,10 +884,11 @@
 
     }
 
-   
- .footer-contacto{
-    width: 100%;
- }
+
+    .footer-contacto {
+        width: 100%;
+    }
+
     .footer-contacto .inf {
         display: none;
     }
@@ -683,23 +896,26 @@
     .footer-contacto .map {
         display: none;
     }
- 
+
     .footer-contacto .form {
         width: 100%;
         gap: 30px;
         margin: 0px;
         padding: 20px;
-        
+
 
     }
+
     .contacto-input {
         height: auto;
         width: 70%;
     }
-    .contacto-mensaje{
-        width: 70% ;
+
+    .contacto-mensaje {
+        width: 70%;
         height: auto;
     }
+
     .footer-contacto h4 {
         width: 80%;
     }
@@ -707,13 +923,13 @@
     .footer-final p {
         font-size: 10px;
     }
-    
+
     .bloque-refugio {
         width: 100%;
         padding: 5rem 1rem;
 
     }
-    
+
 
 
     .title h1 {
@@ -891,75 +1107,58 @@
 
 
     }
-
-    .bloque-contacto {
-
-        padding: 5rem 1rem;
-
-    }
-
-    .main-contacto {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .container-contacto {
-        width: 100%;
-
-    }
-
-    .container-contacto h2 {
-        width: 100%;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .contacto-icon {
-        width: 100%;
-
-    }
-
-    .contacto {
-        width: 100%;
-    }
-
-    .contacto .txt {
-        width: 80%;
-        color: var(--global-palette4);
-        font-family: 'Libre Baskerville', serif;
-        font-size: 14px;
-        line-height: 35px;
-        margin: 2%;
-    }
-
     .bloque-contacto-vet {
         width: 100%;
         padding: 5rem 1rem;
 
     }
 
-    .container-contacto-vet {
+    .contacto-vet{
         width: 100%;
-        background: none;
-
+       display: flex;
+       gap: 50px;
+       
+    }
+    .a-box {
+        width: 80%;
+        
     }
 
-    .main-contacto-vet h2 {
+
+    .imagen-container {
+       display: none;
+        
+    }
+    .text-container{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .text-container h3 {
+        
+        font-size: 16px;
+    }
+
+
+    .contacto-vet h2 {
         width: 100%;
         font-size: 30px;
         text-align: center;
+        padding: 25px;
     }
 
-    .container-contacto-vet h3 {
+
+
+    .contacto .txt {
+        width: 80%;
+    }
+
+    .contacto-icon {
         width: 100%;
-        font-size: 25px;
-
     }
+
+   
+  
 
     .bloque-castraciones {
         width: 100%;
@@ -1003,11 +1202,12 @@
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-        overflow:scroll;
+        overflow: scroll;
 
     }
+
     #racetimes th,
-    td { 
+    td {
         padding: 1rem;
         font-size: 0.8rem;
         width: 60%;
@@ -1016,10 +1216,10 @@
 
 
 
-/* rescates */
 
 
-/* celular */
+
+
 @media screen and (min-width:250px) and (max-width:480px) {
     .band {
         grid-template-columns: repeat(1, 1fr);

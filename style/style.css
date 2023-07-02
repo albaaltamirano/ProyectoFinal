@@ -1481,7 +1481,44 @@ tr:hover:not(#firstrow) {
 
 }
 
- 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+   
+  }
+  
+  .popup-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .close {
+    color: #fff;
+    position: absolute;
+    top:10px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 
 
@@ -1811,7 +1848,7 @@ tr:hover:not(#firstrow) {
     margin-left: 5%;
 }
 
-.section-adopcion .intro {
+.section-adopcion  {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1822,9 +1859,20 @@ tr:hover:not(#firstrow) {
     margin: 25px;
 
 }
+.section-adopcion .text{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
 
 .section-adopcion p {
-    width: 50%;
+    width: 100%;
     color: var(--global-palette4);
     font-size: 14px;
     line-height: 35px;
@@ -2049,38 +2097,87 @@ tr:hover:not(#firstrow) {
 }
 
   
-.main-contacto-vet {
+.contacto-vet {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
 }
-
-.container-contacto-vet {
+.a-box {
+    display:inline-block;
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid var(--global-palette2);
-
-
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .imagen-container {
+      height: 240px;
+      width: 60%;
+      overflow: hidden;
+      border-radius: 0px 0px 20px 20px;
+      display: inline-block;
+      -webkit-border-radius: 0px 0px 20px 20px;
+      -moz-border-radius: 0px 0px 20px 20px;
+      -ms-border-radius: 0px 0px 20px 20px;
+      -o-border-radius: 0px 0px 20px 20px;
 }
+  
+  .imagen-container img {
+    
+      height:300px;
+      margin: -15x 0px 0px -20px;
+     
+}
+  
+  .inner-skew {
+      display: inline-block;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0px;
+      font-size: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 250px;
+      width: 60%;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+  
+  .text-container {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -100px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .text-container h3 {
+    margin: 20px 0px 10px 0px;
+    color: var(--global-palette2);
+    font-size: 18px;
+  }
 
-.container-contacto-vet .contacto {
-    width: 80%;
+
+
+ .contacto {
+    width: 100%;
     margin: 0px;
     padding: 25px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 
 }
 
-.main-contacto-vet h2 {
+.contacto-vet h2 {
     width: 50%;
     font-family: 'Londrina Solid', cursive;
     color: var(--global-palette1);
@@ -2089,17 +2186,9 @@ tr:hover:not(#firstrow) {
     text-align: left;
 }
 
-.container-contacto-vet h3 {
-    width: 80%;
-    font-family: 'Londrina Solid', cursive;
-    color: var(--global-palette4);
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-    padding: 25px 0 0 0;
-}
 
-.container-contacto-vet .contacto .txt {
+
+.contacto .txt {
     width: 70%;
     color: var(--global-palette4);
     font-family: 'Libre Baskerville', serif;
@@ -2108,14 +2197,7 @@ tr:hover:not(#firstrow) {
     margin: 2%;
 }
 
-.container-contacto-vet .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.container-contacto-vet .contacto-icon {
+ .contacto-icon {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
@@ -2124,6 +2206,8 @@ tr:hover:not(#firstrow) {
     justify-content: center;
 }
 
-.container-contacto-vet .contacto-icon img {
+ .contacto-icon img {
     width: 10%;
 }
+
+/* cookie */
