@@ -156,7 +156,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
         <h2> ¿Estás buscando un nuevo amigo?</h2>
         <h4> Todos ellos están en busca de un nuevo hogar</h4>
         <article class="card-ficha" id="dani">
-            <img src="../Assets/Adopciones/DaniMalón.jpg" alt="Anita" title="DaniMalón" style="cursor:pointer"
+            <img src="../Assets/Adopciones/DaniMalón.jpg" alt="DaniMalon" title="DaniMalón" style="cursor:pointer"
                 onclick="onClick(this)" class="w3-hover-opacity">
             <!--modal
            -->
@@ -175,7 +175,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             </div>
             <div class="card-inf">
                <ul>
-               <?php $resultado = mysqli_query ($conexion,$adopcion);
+               <!-- <?php $resultado = mysqli_query ($conexion,$adopcion);
           if($resultado){
             while($row = $resultado -> fetch_array()){
               $id = $row['Id'];
@@ -184,13 +184,14 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               $genero = $row['Genero'];
               $tamaño = $row['Tamaño'];
               $vacunas = $row['Vacunas'];
+              <?php echo $raza;?
             }
-          }?>
-         
-                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
-                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas?></li>
+          }?> -->
+                      
+                    <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                    <li><img src="../Assets/Logo/sex.png"> Macho </li>
+                    <li><img src="../Assets/Logo/tamaño.png">Grande </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
                     
                 </ul>
             </div>
@@ -213,16 +214,16 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             <div class="card-inf">
                 <ul>
                 
-                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
-                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
-                    <li><img src="../Assets/Logo/tamaño.png"><?php echo $tamaño;?></li>
-                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas;?></li>
+                    <li><img src="../Assets/Logo/raza.png"> Galgo </li>
+                    <li><img src="../Assets/Logo/sex.png"> Macho  </li>
+                    <li><img src="../Assets/Logo/tamaño.png">Mediano</li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día</li>
                     
                 </ul>
             </div>
         </article>
         <article class="card-ficha" id="negro">
-            <img src="../Assets/Adopciones/Negro.jpg" alt="Negro" title="ANITA" style="cursor:pointer"
+            <img src="../Assets/Adopciones/Negro.jpg" alt="Negro" title="negro" style="cursor:pointer"
                 onclick="onClick(this)" class="w3-hover-opacity">
             <div class="card-txt">
                 <h3>Negro</h3>
@@ -238,10 +239,10 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             </div>
             <div class="card-inf">
                 <ul>
-                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
-                    <li><img src="../Assets/Logo/sex.png"> <?php echo $genero;?> </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
-                    <li><img src="../Assets/Logo/vacunas.png"><?php echo $vacunas;?> </li>
+                    <li><img src="../Assets/Logo/raza.png"> Mestizo </li>
+                    <li><img src="../Assets/Logo/sex.png"> Macho  </li>
+                    <li><img src="../Assets/Logo/tamaño.png"> Pequeño </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día</li>
                 </ul>
             </div>
         </article>
@@ -262,14 +263,117 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             </div>
             <div class="card-inf">
                 <ul>
-                    <li><img src="../Assets/Logo/raza.png"> <?php echo $raza;?> </li>
-                    <li><img src="../Assets/Logo/sex.png"><?php echo $genero;?> </li>
-                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?> </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas;?></li>
+                    <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                    <li><img src="../Assets/Logo/sex.png"> Macho</li>
+                    <li><img src="../Assets/Logo/tamaño.png"> Grande </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
                 </ul>
             </div>
+            
 
         </article>
+        <article class="card-ficha" id="mandi">
+          <img src="../Assets/Adopciones//Mandi.jpg" alt="Mandi" title="Mandi" style="cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity">
+          <div class="card-txt">
+              <h3>Mandi</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
+                  consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
+                  voluptas
+                  optio, nostrum maiores tempore animi.</p>
+              <div class="button-adopta">
+                  <button name="redirect" class="button" onClick="redirect()">
+                      ¡Contactanos y adoptá!
+                  </button>
+              </div>
+          </div>
+          <div class="card-inf">
+              <ul>
+                  <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                  <li><img src="../Assets/Logo/sex.png"> Hembra</li>
+                  <li><img src="../Assets/Logo/tamaño.png"> Mediana </li>
+                  <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+              </ul>
+          </div>
+          
+
+      </article>
+      <article class="card-ficha" id="barbi">
+        <img src="../Assets/Adopciones/Barbi.jpg" alt="Barbi" title="Barbi" style="cursor:pointer"
+            onclick="onClick(this)" class="w3-hover-opacity">
+        <div class="card-txt">
+            <h3>Barbi</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
+                consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
+                voluptas
+                optio, nostrum maiores tempore animi.</p>
+            <div class="button-adopta">
+                <button name="redirect" class="button" onClick="redirect()">
+                    ¡Contactanos y adoptá!
+                </button>
+            </div>
+        </div>
+        <div class="card-inf">
+            <ul>
+                <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                <li><img src="../Assets/Logo/sex.png"> Hembra</li>
+                <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
+                <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+            </ul>
+        </div>
+      </article>
+        <article class="card-ficha" id="mariposa">
+          <img src="../Assets/Adopciones/Mariposa.jpg" alt="Mariposa" title="Mariposa" style="cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity">
+          <div class="card-txt">
+              <h3>Mariposa</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
+                  consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
+                  voluptas
+                  optio, nostrum maiores tempore animi.</p>
+              <div class="button-adopta">
+                  <button name="redirect" class="button" onClick="redirect()">
+                      ¡Contactanos y adoptá!
+                  </button>
+              </div>
+          </div>
+          <div class="card-inf">
+              <ul>
+                  <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                  <li><img src="../Assets/Logo/sex.png"> Hembra</li>
+                  <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
+                  <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+              </ul>
+          </div>
+        
+
+    </article>
+    <article class="card-ficha" id="cartu">
+      <img src="../Assets/Adopciones/Cartu.jpg" alt="Cartu" title="Cartu" style="cursor:pointer"
+          onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="card-txt">
+          <h3>Cartu</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
+              consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
+              voluptas
+              optio, nostrum maiores tempore animi.</p>
+          <div class="button-adopta">
+              <button name="redirect" class="button" onClick="redirect()" target="_blank">
+                  ¡Contactanos y adoptá!
+              </button>
+          </div>
+      </div>
+      <div class="card-inf">
+          <ul>
+              <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+              <li><img src="../Assets/Logo/sex.png"> Macho</li>
+              <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
+              <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+          </ul>
+      </div>
+    
+
+</article>
 
 
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
