@@ -162,10 +162,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
            -->
             <div class="card-txt">
                 <h3>Dani Malón</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                    consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                    voluptas
-                    optio, nostrum maiores tempore animi.
+                <p>DaniMalón tiene un carácter extraordinariamente amable. Es de tamaño grande. Está sano, se lleva bien por perros y gatos, no tiene problemas para relacionarse con demás animales. Adoptalo, es tranquilo y amoroso.
                 </p>
                 <div class="button-adopta">
                     <button name="redirect" class="button" onClick="redirect()">
@@ -196,15 +193,35 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                 </ul>
             </div>
         </article>
+        <article class="card-ficha" id="mandi">
+            <img src="../Assets/Adopciones//Mandi.jpg" alt="Mandi" title="Mandi" style="cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+            <div class="card-txt">
+                <h3>Mandi</h3>
+                <p>Es tímida, pero encantadora, la encontraron sola y abandonada, tenia mucha hambre y buscaba a la gente.  Tiene un buen carácter, va muy bien de la correa, es dócil, le gusta jugar, y a la vez es tranquilita. </p>
+                <div class="button-adopta">
+                    <button name="redirect" class="button" onClick="redirect()">
+                        ¡Contactanos y adoptá!
+                    </button>
+                </div>
+            </div>
+            <div class="card-inf">
+                <ul>
+                    <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                    <li><img src="../Assets/Logo/sex.png"> Hembra</li>
+                    <li><img src="../Assets/Logo/tamaño.png"> Mediana </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                </ul>
+            </div>
+            
+  
+        </article>
          <article class="card-ficha" id="roberto">
             <img src="../Assets/Adopciones/Roberto.jpg" alt="Anita" title="Roberto" style="cursor:pointer"
                 onclick="onClick(this)" class="w3-hover-opacity">
             <div class="card-txt">
                 <h3>Roberto</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                    consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                    voluptas
-                    optio, nostrum maiores tempore animi.</p>
+                <p>Roberto fue un descarte galgero, como se le lastimo una de sus patitas decidieron que no les servia más, él  tiene un carácter amable. Es de tamaño grande. Está sano, a excepción de su patita, se lleva muy bien con perros y gatos. Adoptalo, es tranquilo y amoroso.</p>
                 <div class="button-adopta">
                     <button name="redirect" class="button" onClick="redirect()">
                         ¡Contactanos y adoptá!
@@ -227,10 +244,8 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                 onclick="onClick(this)" class="w3-hover-opacity">
             <div class="card-txt">
                 <h3>Negro</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                    consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                    voluptas
-                    optio, nostrum maiores tempore animi.</p>
+                <p>Negro fue encontrado junto con su hermanito en un camino rural, a su hermanito lo adoptaron, quedó solo él, es cachorro y muy juguetón. Buscamos familia responsable para Negro.
+                </p>
                 <div class="button-adopta">
                     <button name="redirect" class="button" onClick="redirect()">
                         ¡Contactanos y adoptá!
@@ -251,10 +266,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                 onclick="onClick(this)" class="w3-hover-opacity">
             <div class="card-txt">
                 <h3>Pancho</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                    consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                    voluptas
-                    optio, nostrum maiores tempore animi.</p>
+                <p>NO sabemos de donde ha venido, si se ha perdido, si lo han abandonado. La policía la recogió, y lo trajeron. Es dulce, tranquilo, convive muy bien con otros perros. se deja llevar de la correa. Ayudanos a encontrarle una familia! </p>
                 <div class="button-adopta">
                     <button name="redirect" class="button" onClick="redirect()">
                         ¡Contactanos y adoptá!
@@ -272,41 +284,13 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             
 
         </article>
-        <article class="card-ficha" id="mandi">
-          <img src="../Assets/Adopciones//Mandi.jpg" alt="Mandi" title="Mandi" style="cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity">
-          <div class="card-txt">
-              <h3>Mandi</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                  consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                  voluptas
-                  optio, nostrum maiores tempore animi.</p>
-              <div class="button-adopta">
-                  <button name="redirect" class="button" onClick="redirect()">
-                      ¡Contactanos y adoptá!
-                  </button>
-              </div>
-          </div>
-          <div class="card-inf">
-              <ul>
-                  <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
-                  <li><img src="../Assets/Logo/sex.png"> Hembra</li>
-                  <li><img src="../Assets/Logo/tamaño.png"> Mediana </li>
-                  <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
-              </ul>
-          </div>
-          
-
-      </article>
+        
       <article class="card-ficha" id="barbi">
         <img src="../Assets/Adopciones/Barbi.jpg" alt="Barbi" title="Barbi" style="cursor:pointer"
             onclick="onClick(this)" class="w3-hover-opacity">
         <div class="card-txt">
             <h3>Barbi</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                voluptas
-                optio, nostrum maiores tempore animi.</p>
+            <p>Brabi fue encontrada abandonada en un camino rural junto a su hermanita Mariposa, tiene aproximadamente cuatro mes, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
             <div class="button-adopta">
                 <button name="redirect" class="button" onClick="redirect()">
                     ¡Contactanos y adoptá!
@@ -327,10 +311,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               onclick="onClick(this)" class="w3-hover-opacity">
           <div class="card-txt">
               <h3>Mariposa</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-                  consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-                  voluptas
-                  optio, nostrum maiores tempore animi.</p>
+              <p>Mariposa fue encontrada abandonada en un camino rural junto a su hermanita Barbi, tiene aproximadamente cuatro mes, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
               <div class="button-adopta">
                   <button name="redirect" class="button" onClick="redirect()">
                       ¡Contactanos y adoptá!
@@ -353,12 +334,9 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
           onclick="onClick(this)" class="w3-hover-opacity">
       <div class="card-txt">
           <h3>Cartu</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non dicta possimus ad magni
-              consequatur provident molestiae recusandae, esse facilis deleniti blanditiis nam consectetur
-              voluptas
-              optio, nostrum maiores tempore animi.</p>
+          <p>A Cartu lo dejaron esta ultima semana al costado de la ruta, con los peligros que ello implica, actualemente está en un hogar de acogida, en caso de no encontrar familia pronto va a ingresar al refugio, es muy chiquitia, amorosa, le gusta bañarse!</p>
           <div class="button-adopta">
-              <button name="redirect" class="button" onClick="redirect()" target="_blank">
+              <button name="redirect" class="button" onClick="redirect()" >
                   ¡Contactanos y adoptá!
               </button>
           </div>

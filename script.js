@@ -62,8 +62,6 @@ function onClick(element) {
 function redirect() {
   window.location.href = "https://api.whatsapp.com/send?phone=543493461833";
 }
-// form
-
 
 
 // toggle
@@ -130,3 +128,37 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// validad formulario
+function validarFormulario(e){
+  var error = false;
+  var messages = '';
+  var nombre = document.getElementsByName('nombre')[0].value;
+  if (!nombre){
+    messages+= 'Debe rellenar el campo nombre\n';
+    error = true;
+  }
+  var email = document.getElementsByName('email')[0].value;
+  if (!email) {
+    messages+= 'Debe rellenar el campo email\n';
+    error = true;
+  }
+  var telefono = document.getElementsByName('telefono')[0].value;
+  if (!telefono){
+    messages+= 'Debe rellenar el campo teléfono\n';
+    error = true;
+  }
+  var comentarios = document.getElementsByName('mensaje')[0].value;
+  if (!comentarios) {
+    messages+= 'Debe rellenar el campo mensajes\n';
+    error = true;
+  }
+  var errorDiv = document.querySelector('.errorMessages');
+  errorDiv.innerText = messages;
+  if (error) {
+    e.preventDefault();
+  }
+  return !error;
+}
+
+var btnEnviar = document.querySelector('.bottom');
+btnEnviar.addEventListener('click', validarFormulario);

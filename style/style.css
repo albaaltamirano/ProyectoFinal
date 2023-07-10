@@ -391,6 +391,7 @@ ul {
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    
 }
 
 .adopcion-title {
@@ -670,6 +671,7 @@ footer {
     color: #111;
     font-size: 15px;
     font-family: 'Libre Baskerville', serif;
+    
 
 }
 
@@ -680,6 +682,9 @@ footer {
     height: 30px;
 
 
+}
+.contacto-mensaje{
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .footer-contacto .inf {
@@ -726,7 +731,7 @@ footer {
 
 }
 
-.contacto-enviar {
+.bottom {
     float: right;
     margin: 0;
     color: var(--global-palette6);
@@ -2210,4 +2215,6 @@ tr:hover:not(#firstrow) {
     width: 10%;
 }
 
-/* cookie */
+.errorMessages{
+    color: red;
+  }
