@@ -1,4 +1,5 @@
 
+
 // slider principal
 
 window.addEventListener('load', () => {

@@ -157,7 +157,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
         <h2> ¿Estás buscando un nuevo amigo?</h2>
         <h4> Todos ellos están en busca de un nuevo hogar</h4>
         <article class="card-ficha" id="dani">
-            <img src="../Assets/Adopciones/DaniMalón.jpg" alt="DaniMalon" title="DaniMalón" style="cursor:pointer"
+            <img src="../Assets/Adopciones/DaniMalon.jpg" alt="DaniMalon" title="DaniMalón" style="cursor:pointer"
                 onclick="onClick(this)" class="w3-hover-opacity">
             <!--modal
            -->
@@ -176,7 +176,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             
             <div class="card-inf" id="btnOne">
                <ul>
-               <!-- <?php $resultado = mysqli_query ($conexion,$adopcion);
+               <?php $resultado = mysqli_query ($conexion,$adopcion);
           if($resultado){
             while($row = $resultado -> fetch_array()){
               $id = $row['Id'];
@@ -187,12 +187,12 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               $vacunas = $row['Vacunas'];
             
             }
-          }?>  -->
+          }?>
                       
-                    <li><img src="../Assets/Logo/raza.png"><?php echo $raza;?> Mestizo  </li> 
-                    <li><img src="../Assets/Logo/sex.png"> Macho </li>
-                    <li><img src="../Assets/Logo/tamaño.png">Grande </li>
-                    <li><img src="../Assets/Logo/vacunas.png">Completas</li>
+                    <li><img src="../Assets/Logo/raza.png"><?php echo $raza;?>   </li> 
+                    <li><img src="../Assets/Logo/sex.png"><?php echo $sexo;?> </li>
+                    <li><img src="../Assets/Logo/tamaño.png"> <?php echo $tamaño;?></li>
+                    <li><img src="../Assets/Logo/vacunas.png"> <?php echo $vacunas;?> </li>
                     
                 </ul>
             </div>
@@ -303,7 +303,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
             onclick="onClick(this)" class="w3-hover-opacity">
         <div class="card-txt">
             <h3>Barbi</h3>
-            <p>Brabi fue encontrada abandonada en un camino rural junto a su hermanita Mariposa, tiene aproximadamente cuatro mes, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
+            <p>Brabi fue encontrada abandonada en un camino rural junto a su hermanita Mariposa, tiene aproximadamente cuatro meses, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
             <div class="button-adopta">
                 <button name="redirect" class="button" onClick="redirect()">
                     ¡Contactanos y adoptá!
@@ -327,7 +327,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               onclick="onClick(this)" class="w3-hover-opacity">
           <div class="card-txt">
               <h3>Mariposa</h3>
-              <p>Mariposa fue encontrada abandonada en un camino rural junto a su hermanita Barbi, tiene aproximadamente cuatro mes, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
+              <p>Mariposa fue encontrada abandonada en un camino rural junto a su hermanita Barbi, tiene aproximadamente cuatro meses, se lleva bien con personas y demás animales. Es jugutona y muy dosil. Si estas interesado escribinos!</p>
               <div class="button-adopta">
                   <button name="redirect" class="button" onClick="redirect()">
                       ¡Contactanos y adoptá!
@@ -347,12 +347,12 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
         </div>
 
     </article>
-    <article class="card-ficha" id="cartu">
-      <img src="../Assets/Adopciones/Cartu.jpg" alt="Cartu" title="Cartu" style="cursor:pointer"
+    <article class="card-ficha" id="caru">
+      <img src="../Assets/Adopciones/Cartu.jpg" alt="Caru" title="Cartu" style="cursor:pointer"
           onclick="onClick(this)" class="w3-hover-opacity">
       <div class="card-txt">
-          <h3>Cartu</h3>
-          <p>A Cartu lo dejaron esta ultima semana al costado de la ruta, con los peligros que ello implica, actualemente está en un hogar de acogida, en caso de no encontrar familia pronto va a ingresar al refugio, es muy chiquitia, amorosa, le gusta bañarse!</p>
+          <h3>Caru</h3>
+          <p>A Caru lo dejaron esta ultima semana al costado de la ruta, con los peligros que eso implica, actualemente está en un hogar temporario hasta su recuperación, en caso de no encontrar familia pronto va a ingresar al refugio, es muy chiquitia y muy amorosa</p>
           <div class="button-adopta">
               <button name="redirect" class="button" onClick="redirect()" >
                   ¡Contactanos y adoptá!
