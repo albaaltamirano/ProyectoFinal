@@ -1823,7 +1823,7 @@ tr:hover:not(#firstrow) {
 /* adopcion html */
 .bloque-adopcion {
     width: 100%;
-    padding: 11rem 1rem;
+    padding: 9rem 1rem;
     margin: auto;
     display: flex;
     justify-content: left;
@@ -1861,27 +1861,16 @@ tr:hover:not(#firstrow) {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    margin: 25px;
+    margin: 0px;
 
 }
-.section-adopcion .text{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    
 
-}
 
 .section-adopcion p {
-    width: 100%;
+    width: 60%;
     color: var(--global-palette4);
     font-size: 14px;
     line-height: 35px;
-    gap: 20px;
     text-align: justify;
     font-family: 'Libre Baskerville', serif;
 }
@@ -1899,8 +1888,9 @@ tr:hover:not(#firstrow) {
 
 }
 
+
 .container-adopcion .bloque {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1908,9 +1898,8 @@ tr:hover:not(#firstrow) {
     gap: 60px;
 
 }
-
-.container-adopcion .bloque .text {
-    width: 50%;
+ .container-adopcion  .texto{
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1918,6 +1907,7 @@ tr:hover:not(#firstrow) {
     gap: 10px;
 
 }
+
 
 .container-adopcion .bloque h3 {
     width: 100%;
@@ -1941,12 +1931,12 @@ tr:hover:not(#firstrow) {
 }
 
 .container-adopcion .bloque .imagen {
-    width: 35%;
+    width: 40%;
 
 }
 
 .container-adopcion .bloque img {
-    width: 450px;
+    width:70%;
     height: 300px;
 }
 
@@ -2033,12 +2023,13 @@ tr:hover:not(#firstrow) {
 }
 
 .card-inf {
-    width: 18%;
+    width:20%;
     padding: 2%;
     color: var(--global-palette4);
     font-size: 14px;
     line-height: 30px;
     font-family: 'Libre Baskerville', serif;
+    display: block;
 
 
 }
@@ -2058,6 +2049,10 @@ tr:hover:not(#firstrow) {
 
 }
 
+
+.open-sub-menu{
+    display: none;
+}
 .button {
     width: 35%;
     background: #606de1;

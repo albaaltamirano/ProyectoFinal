@@ -103,7 +103,7 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
         </div>
     </section>
     <section class="section-adopcion">
-        <div class="section-adopcion text">
+        
             <p>Adoptar a un perro o gato implica tomar una gran decisión y responsabilidad. Debes tener en cuenta que el
                 perro requiere tiempo, por lo tanto es importante que tengas claridad sobre la disponibilidad que tengas
                 de este. Él no solo necesita compañía, sino actividad física diaria.
@@ -113,13 +113,13 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                 durante un período de tiempo que puede ser de 15 años ó más. Adoptar un animal de compañía puede ser
                 gratificante, pero solo si estas completamente seguro y convencido de todo lo que implicara para ti
                 adoptar un compañero.</p>
-            <div>
+            
 
 </section>
+
     <section class="container-adopcion">
-        <div class="container-adopcion bloque">
-            <div class="container-adopcion bloque text">
-                <div>
+            <div class="container-adopcion bloque">
+                <div class="texto">
                     <h3>Adultos</h3>
                     <p>Nuestra experiencia nos ha demostrado que un perro adulto es más fácil de educar, se adaptan a
                         órdenes básicas, si no las tienen adquiridas de antes, se amolda perfectamente a la vida con sus
@@ -127,20 +127,20 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                         demandan toda tu atención 24 horas, son más tranquilos y calmados que un cachorro. Sabemos
                         perfectamente su estatura, tamaño definitivo y carácter. </p>
                 </div>
-            </div>
+            
             <div class="container-adopcion bloque imagen">
 
                 <img src="../Assets/Adopciones/adulto.jpg" alt="">
 
             </div>
-        </div>
+            </div>
     
 
     <div class="container-adopcion bloque">
         <div class="container-adopcion bloque imagen">
             <img src="../Assets/Adopciones/cachorro.jpg" alt="">
         </div>
-        <div class="container-adopcion bloque text">
+          <div class="texto">
             <h3>Cachorros</h3>
             <p> Son muy tiernos y hermosos. Podemos disfrutar de sus etapas de crecimiento y desarrollo hasta
                 convertirse en adultos; pero todo esto requiere de mucho esfuerzo, ya que como son bebés hasta el año,
@@ -150,8 +150,9 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
 
         </div>
     </div>
-    </section>
-
+    
+    
+</section>
     <section class="card">
         <h2> ¿Estás buscando un nuevo amigo?</h2>
         <h4> Todos ellos están en busca de un nuevo hogar</h4>
@@ -170,7 +171,10 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                     </button>
                 </div>
             </div>
-            <div class="card-inf">
+
+           <button class="open-sub-menu" onclick="submenuToggle('btnOne')">Más info</button> 
+            
+            <div class="card-inf" id="btnOne">
                <ul>
                <!-- <?php $resultado = mysqli_query ($conexion,$adopcion);
           if($resultado){
@@ -181,16 +185,17 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               $genero = $row['Genero'];
               $tamaño = $row['Tamaño'];
               $vacunas = $row['Vacunas'];
-              <?php echo $raza;?
+            
             }
-          }?> -->
+          }?>  -->
                       
-                    <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
+                    <li><img src="../Assets/Logo/raza.png"><?php echo $raza;?> Mestizo  </li> 
                     <li><img src="../Assets/Logo/sex.png"> Macho </li>
                     <li><img src="../Assets/Logo/tamaño.png">Grande </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                    <li><img src="../Assets/Logo/vacunas.png">Completas</li>
                     
                 </ul>
+            </div>
             </div>
         </article>
         <article class="card-ficha" id="mandi">
@@ -205,15 +210,16 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                     </button>
                 </div>
             </div>
-            <div class="card-inf">
+            <button class="open-sub-menu" onclick="submenuToggle('btnDos')">Más info</button>
+            <div class="card-inf" id="btnDos">
                 <ul>
                     <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
                     <li><img src="../Assets/Logo/sex.png"> Hembra</li>
                     <li><img src="../Assets/Logo/tamaño.png"> Mediana </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Completas </li>
                 </ul>
             </div>
-            
+          </div>
   
         </article>
          <article class="card-ficha" id="roberto">
@@ -228,16 +234,18 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                     </button>
                 </div>
             </div>
-            <div class="card-inf">
+            <button class="open-sub-menu" onclick="submenuToggle('btnTres')">Más info</button>
+            <div class="card-inf" id="btnTres">
                 <ul>
                 
                     <li><img src="../Assets/Logo/raza.png"> Galgo </li>
                     <li><img src="../Assets/Logo/sex.png"> Macho  </li>
                     <li><img src="../Assets/Logo/tamaño.png">Mediano</li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día</li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Completas</li>
                     
                 </ul>
             </div>
+          </div>
         </article>
         <article class="card-ficha" id="negro">
             <img src="../Assets/Adopciones/Negro.jpg" alt="Negro" title="negro" style="cursor:pointer"
@@ -252,14 +260,17 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                     </button>
                 </div>
             </div>
-            <div class="card-inf">
+            <button class="open-sub-menu" onclick="submenuToggle('btnCuatro')">Más info</button>
+            <div class="card-inf" id="btnCuatro">
                 <ul>
                     <li><img src="../Assets/Logo/raza.png"> Mestizo </li>
                     <li><img src="../Assets/Logo/sex.png"> Macho  </li>
                     <li><img src="../Assets/Logo/tamaño.png"> Pequeño </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día</li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Completas</li>
                 </ul>
             </div>
+            
+          </div>
         </article>
         <article class="card-ficha" id="pancho">
             <img src="../Assets/Adopciones/Pancho.jpg" alt="Pancho" title="Pancho" style="cursor:pointer"
@@ -273,15 +284,17 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                     </button>
                 </div>
             </div>
-            <div class="card-inf">
+            <button class="open-sub-menu" onclick="submenuToggle('btnCinco')">Más info</button>
+            <div class="card-inf" id="btnCinco">
                 <ul>
                     <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
                     <li><img src="../Assets/Logo/sex.png"> Macho</li>
                     <li><img src="../Assets/Logo/tamaño.png"> Grande </li>
-                    <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                    <li><img src="../Assets/Logo/vacunas.png"> Completas </li>
                 </ul>
             </div>
-            
+           
+          </div>
 
         </article>
         
@@ -297,14 +310,17 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                 </button>
             </div>
         </div>
-        <div class="card-inf">
+        <button class="open-sub-menu" onclick="submenuToggle('btnSeis')">Más info</button>
+        <div class="card-inf" id="btnSeis">
             <ul>
                 <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
                 <li><img src="../Assets/Logo/sex.png"> Hembra</li>
                 <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
-                <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                <li><img src="../Assets/Logo/vacunas.png"> Completas </li>
             </ul>
         </div>
+        
+      </div>
       </article>
         <article class="card-ficha" id="mariposa">
           <img src="../Assets/Adopciones/Mariposa.jpg" alt="Mariposa" title="Mariposa" style="cursor:pointer"
@@ -318,15 +334,17 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
                   </button>
               </div>
           </div>
-          <div class="card-inf">
+          <button class="open-sub-menu" onclick="submenuToggle('btnSiete')">Más info</button>
+          <div class="card-inf" id="btnSiete">
               <ul>
                   <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
                   <li><img src="../Assets/Logo/sex.png"> Hembra</li>
                   <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
-                  <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+                  <li><img src="../Assets/Logo/vacunas.png"> Completas </li>
               </ul>
           </div>
-        
+          
+        </div>
 
     </article>
     <article class="card-ficha" id="cartu">
@@ -341,15 +359,15 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
               </button>
           </div>
       </div>
-      <div class="card-inf">
+      <button class="open-sub-menu" onclick="submenuToggle('btnOcho')">Más info</button>
+      <div class="card-inf" id="btnOcho">
           <ul>
               <li><img src="../Assets/Logo/raza.png"> Mestizo  </li>
               <li><img src="../Assets/Logo/sex.png"> Macho</li>
               <li><img src="../Assets/Logo/tamaño.png"> Chico </li>
-              <li><img src="../Assets/Logo/vacunas.png"> Vacunas al día </li>
+              <li><img src="../Assets/Logo/vacunas.png"> Completas </li>
           </ul>
       </div>
-    
 
 </article>
 
@@ -376,24 +394,25 @@ $adopcion = "SELECT * FROM nueva WHERE id ";
     </a>
 
     <footer>
-      <div class="footer-contacto">
+    <div class="footer-contacto">
         <div class="footer-contacto form">
           <h3> ¡Escríbenos!</h3>
           <form class="contacto" id="FormId">
-            <label class="contacto-label" for="nombre"> Nombre </label>
-            <input class="contacto-input" type="text" name="nombre" id="nombre">
+            <label class="contacto-label" for="nombre" placeholder="Ingrese su nombre"> Nombre </label>
+            <input class="contacto-input" type="text" name="nombre" id="nombre" required pattern="[a-zA-Z\s]+" title="El nombre debe ser alpha"> 
             <br>
-            <label class="contacto-label" for="email"> Email </label>
-            <input class="contacto-input" type="email" name="email" id="email">
+            <label class="contacto-label" for="email" placeholder="su email"> Email </label>
+            <input class="contacto-input" type="email" name="email" id="email" required title="El formato es inválido">
             <br>
-            <label class="contacto-label" for="telefono"> Teléfono</label>
-            <input class="contacto-input" type="text" name="telefono" id="telefono">
+            <label class="contacto-label" for="telefono" placeholder="Su teléfono"> Teléfono</label>
+            <input class="contacto-input" type="text" name="telefono" id="telefono"required title="No es un teléfono válido" pattern="^[\+\d]+">
             <br>
-            <textarea class="contacto-mensaje" rows="6" cols="40" placeholder="Mensaje"></textarea>
+            <textarea id="mensaje" class="contacto-mensaje" rows="6" cols="40" placeholder="Ingrese su mensaje" required></textarea>
             <br>
-            <input class="contacto-enviar" type="submit" value="Enviar">
+            <input class="bottom" type="submit" value="Enviar"/>
           </form>
         </div>
+        <div class="errorMessages"></div>
 
         <div class="footer-contacto inf">
           <h3>Contacto</h3>

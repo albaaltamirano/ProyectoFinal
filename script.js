@@ -162,3 +162,14 @@ function validarFormulario(e){
 
 var btnEnviar = document.querySelector('.bottom');
 btnEnviar.addEventListener('click', validarFormulario);
+
+
+// card +
+function submenuToggle(divid) {
+  var submenu = document.getElementById(divid);
+  if( submenu.style.display === "none") {
+      submenu.style.display = "block";
+  } else {
+      submenu.style.display = "none";
+  }
+}
